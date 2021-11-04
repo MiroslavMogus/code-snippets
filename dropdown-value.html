@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<span name="type">
+    <select id="treatments" name="sms-shortcode">
+    <option value="1">Select Treatment</option>
+    <option value="2">Test sms</option>
+    </select>
+</span>
+<script>
+
+document.querySelector('#treatments').addEventListener("change", function() {
+  var e = document.getElementById("treatments");
+  console.log(e.options[e.selectedIndex].text);
+  console.log(e.options[e.selectedIndex].value);
+});
+
+</script>
+</body>
+</html>
